@@ -28,20 +28,21 @@
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
-                    <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
-                    <i class="fa fa-phone mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
+                    <!-- <i class="fa fa-envelope mx-2"></i> -->
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@tienda.com</a>
+                    <i class="fa fa-phone mx-2"></i> 
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:681133720">681133720</a>
                 </div>
                 <div class="contenedor-iconos-redes">
                     <!-- 
                         <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2" src="./assets/img/instagram.png"></i></a>
                         <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
                         <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
-                    -->
+                    
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                -->
                 </div>
             </div>
         </div>

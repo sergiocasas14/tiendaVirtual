@@ -4,11 +4,11 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Tienda Sergio</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:683133720">683133720</a>
+                            <a class="text-decoration-none" href="tel:681133720">681133720</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
