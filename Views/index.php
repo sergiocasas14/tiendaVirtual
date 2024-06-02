@@ -90,13 +90,16 @@
             </div>
         </div>
         <div class="row">
-             
+            <!--Recorro el arreglo categorias y temporalmente lo guardo en una variable -->
+            <?php foreach ($data['categorias'] as $categoria) { ?> 
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/category_img_01.jpg" class="rounded-circle img-fluid border"></a>
-                <h5 class="text-center mt-3 mb-3">Relojes</h5>
-                <p class="text-center"><a class="btn btn-success">Comprar</a></p>
+                
+                <!-- accedo a las img de la base de datos -->
+                <a href="#"><img src="<?php echo $categoria['imagen']; ?>" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3"><?php echo $categoria['categoria']; ?></h5>
             </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
+            <?php } ?>
+            <!--<div class="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="./assets/img/category_img_02.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Deportivas</h2>
                 <p class="text-center"><a class="btn btn-success">Comprar</a></p>
@@ -105,7 +108,7 @@
                 <a href="#"><img src="./assets/img/category_img_03.jpg" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Accesorios</h2>
                 <p class="text-center"><a class="btn btn-success">Comprar</a></p>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- End Categories of The Month -->
