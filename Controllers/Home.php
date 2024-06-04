@@ -9,6 +9,9 @@ class Home extends Controller
     {
         $data['title'] = 'Pagina Principal';
         $data['categorias'] = $this->model->getCategorias();
+
+        $data['nuevosProductos'] = $this->model->getnuevosProductos();
+        
         
         /*Comprobaciones 
         print_r($data);

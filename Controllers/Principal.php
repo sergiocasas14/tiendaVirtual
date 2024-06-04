@@ -16,7 +16,7 @@ class Principal extends Controller
         $data['title'] = 'Nuestro Equipo';
         $this->views->getView('principal', "about", $data);
     }
-        // Vista about
+        // Vista shop
      public function shop()
     {
          $data['title'] = 'Nuestros Productos';
@@ -25,7 +25,9 @@ class Principal extends Controller
         // Vista detail
      public function detail($id_producto)
      {
-         $data['title'] = '--------------------';
+        //accedemos al modelo para traer el metodo getProducto guardandolo en una variable
+         $data['producto'] = $this->model->getProducto($id_producto);
+         $data['title'] = $data['producto']['nombre'];
          $this->views->getView('principal', "detail", $data);
      }
 

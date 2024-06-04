@@ -127,10 +127,12 @@
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($data['nuevosProductos'] as $producto) {  ?>
+
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_01.jpg" class="card-img-top" alt="...">
+                        <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['id']; ?>">
+                            <img src="<?php echo $producto['imagen']; ?>" class="card-img-top" alt="<?php echo $producto['nombre']; ?>">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -141,64 +143,17 @@
                                     <i class="text-muted fa fa-star"></i>
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
-                                <li class="text-muted text-right">$20.00</li>
+                                <li class="text-muted text-right"><?php echo MONEDA . ' ' . $producto['precio']; ?></li>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Linterna portatil</a>
+                            <a href="<?php echo BASE_URL . 'principal/detail/' . $producto['id']; ?>" class="h2 text-decoration-none text-dark"><?php echo $producto['nombre']; ?></a>
                             <p class="card-text">
-                                Linterna de mano, con diferentes modalidades de luces. Incluye pilas en su interior.
+                                <?php echo $producto['descripcion']; ?>
                             </p>
                             <p class="text-muted">Reseñas (24)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                    <i class="text-muted fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$148.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Reloj inteligente</a>
-                            <p class="card-text">
-                                Reloj deportivo inteligente, con barteria de más de 48h. Resistente al agua.
-                            </p>
-                            <p class="text-muted">Reseñas (48)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body">
-                            <ul class="list-unstyled d-flex justify-content-between">
-                                <li>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                    <i class="text-warning fa fa-star"></i>
-                                </li>
-                                <li class="text-muted text-right">$65.00</li>
-                            </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cámara Polaroid</a>
-                            <p class="card-text">
-                                Cámara One Step vintage con carrete para más de 20 fotos fisicas. Incluye 1 recambio de tinta.
-                            </p>
-                            <p class="text-muted">Reseñas (74)</p>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>
